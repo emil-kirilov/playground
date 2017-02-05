@@ -1,5 +1,18 @@
 def merge left, right
-	(left + right).sort
+	result = []
+	while !left.empty? && !right.empty?
+		if left[0] < right[0]
+			result << left.shift
+		else
+			result << right.shift
+		end
+	end
+
+	if left.empty?
+		result += right
+	else
+		result += left
+	end
 end
 
 def merge_sort arr
