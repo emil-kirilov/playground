@@ -20,3 +20,9 @@ a
 # => nil
 a
 # => :foo
+
+!true && false
+#=> false
+
+not true && false
+#=> true
