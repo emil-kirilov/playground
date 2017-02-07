@@ -1,4 +1,4 @@
-1 == 1.0    #true
+1 == 1.0    #true - same value
 1.eql?(1.0) #false - different types
 
 class Test
