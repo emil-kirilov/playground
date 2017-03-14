@@ -1,0 +1,9 @@
+defmodule MyModule do
+	def if (:false, _) do 
+		false
+	end
+
+	def if (:true, otherwise) do
+		otherwise
+	end
+end
